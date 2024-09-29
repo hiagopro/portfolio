@@ -2,7 +2,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa"; // Font Awesome
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si"; // Simple Icons
-import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="bg-blue-200 ">
