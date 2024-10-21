@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
           </p>
         </div>
         <div className="px-12 flex gap-5 py-6 ">
-          <button className="flex gap-1 py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-surface-secondary hover:bg-surface-terciari"><NotepadText /> Meu resumo </button>
-          <button className="flex py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400">Get in touch<ChevronsRight /></button>
+          <button className="flex gap-1 py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-surface-secondary hover:bg-surface-terciari lg:px-6 lg:py-4"><NotepadText /> Meu resumo </button>
+          <button className="flex py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 lg:py-4 lg:px-6" >Get in touch<ChevronsRight /></button>
         </div>
       </div>
     </div>

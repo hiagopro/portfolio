@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     setShowPopup(false);
   }
   return (
-    <header className="bg-surface-background h-20 ">
+    <header className="bg-surface-background h-20 border-b-2 shadow-2xl shadow-black">
       <nav className="flex justify-between items-center ml-10 mr-5 h-full">
         <div className="flex">
           <p className="text-primary-text font-kalam font-thin text-xl">
