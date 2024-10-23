@@ -26,7 +26,8 @@ const About: React.FC = () => {
         </h1>
         <p className="pl-8 text-xl text-secondary-text font-Heebo">alem de codar, sou um amante de esportes, gosto de treinar, jogar futebol e futvolei. gosto de sair com a familia e momentos ao ar livre.</p>
       </div>
-      <div className="pl-8"> <button className="flex gap-1 py-4 px-6 text-nowrap font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 lg:px-6 lg:py-4">
+      <div className="pl-8"> <button className="flex gap-1 py-4 px-6 text-nowrap 
+      font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 lg:px-6 lg:py-4">
             <NotepadText /> Meu resumo{" "}
           </button></div>
     </div>

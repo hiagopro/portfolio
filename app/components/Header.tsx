@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             <X className="text-primary-text " />
           </button>
         </div>
-        <div className="hidden gap-8 px-5 sm:flex">
+        <div className="hidden gap-8 px-5 sm:flex ">
           {" "}
           <Link
             href=""
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
       <div
         className={
           showPopup
-            ? "flex flex-col bg-surface-primary h-screen w-2/3 absolute right-0  items-end px-6  "
+            ? "flex flex-col bg-surface-primary h-screen w-2/3 absolute right-0  items-end px-6 z-50  "
             : "hidden"
         }
       >
