@@ -4,7 +4,7 @@ import { ChevronsRight, NotepadText } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <div className=" py-5 relative bg-surface-background md:flex md:flex-row md:px-10 md:justify-between lg:justify-center lg:gap-32 lg:py-24">
+    <div className=" py-6 relative  bg-surface-background md:flex md:flex-row md:px-10 md:justify-between lg:justify-center lg:gap-32 lg:py-56">
       <div className=" flex  justify-center md:order-2 md:justify-center">
         <Image src="/computer.svg" width="300" height="300" alt="" />
       </div>
