@@ -4,7 +4,7 @@ import { NotepadText } from "lucide-react";
 const About: React.FC = () => {
   return (
     <div className="bg-surface-background lg:pb-6">
-      <div className="bg-surface-terciari flex flex-col pb-8 lg:flex-row lg:py-32 lg:rounded-lg lg:w-11/12 lg:m-auto">
+      <div className="bg-surface-terciari flex flex-col pb-8 lg:flex-row  lg:rounded-lg lg:w-11/12 lg:m-auto">
         <div className="flex flex-col justify-center lg:flex-row lg:w-1/2">
           <Image
             className="lg:hidden"
