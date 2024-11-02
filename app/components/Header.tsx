@@ -13,10 +13,10 @@ const Header: React.FC = () => {
     setShowPopup(false);
   }
   return (
-    <header className="bg-surface-background h-20 border-b-2 shadow-2xl shadow-black">
+    <header className="bg-surface-background h-20 border-b-2 shadow-2xl shadow-black" id="Header">
       <nav className="flex justify-between items-center ml-10 mr-5 h-full">
         <div className="flex">
-          <p className="text-primary-text font-kalam font-thin text-xl">
+          <p className="text-primary-text font-kalam font-thin text-xl"> 
             Hiago
           </p>
           <p className="text-primary-text font-kalam text-xl">Gentil</p>
@@ -38,25 +38,25 @@ const Header: React.FC = () => {
         <div className="hidden gap-8 px-5 sm:flex ">
           {" "}
           <Link
-            href=""
+            href="#Home"
             className="text-primary-text font-Heebo font-light hover:font-normal "
           >
             Home
           </Link>{" "}
           <Link
-            href=""
+            href="#About"
             className="text-primary-text font-Heebo font-light hover:font-normal"
           >
             Sobre
           </Link>{" "}
           <Link
-            href=""
+            href="#Projects"
             className="text-primary-text font-Heebo font-light hover:font-normal"
           >
             Projetos
           </Link>{" "}
           <Link
-            href=""
+            href="#Contact"
             className="text-primary-text font-Heebo font-light hover:font-normal"
           >
             Contact
@@ -71,22 +71,36 @@ const Header: React.FC = () => {
         }
       >
         <div className="flex flex-col gap-8 h-1/4 w-full   items-end    py-6">
-          <Link href="" className="text-primary-text ">
+          <Link href="#Home" className="text-primary-text " onClick={handleClosePopup}>
             Home
           </Link>
-          <Link href="" className="text-primary-text ">
+          <Link href="#About" className="text-primary-text " onClick={handleClosePopup}>
             Sobre
           </Link>
-          <Link href="" className="text-primary-text ">
+          <Link href="#Projects" className="text-primary-text " onClick={handleClosePopup}>
             Projetos
           </Link>
-          <Link href="" className="text-primary-text  ">
+          <Link href="#Contact" className="text-primary-text  " onClick={handleClosePopup}>
             Contato
           </Link>
           <hr className=" bg-surface-secondary border-surface-secondary h-[0.5px]  w-full  " />
           <div className="flex  gap-3">
-            <Github className="text-primary-text" />
-            <Linkedin className="text-primary-text" />
+            <a
+              href="https://github.com/hiagopro"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleClosePopup}
+            >
+              <Github className="text-primary-text" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hiago-gentil-28a5b6270/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleClosePopup}
+            >
+              <Linkedin className="text-primary-text" />
+            </a>
           </div>
         </div>
       </div>
