@@ -27,7 +27,8 @@ const Contact: React.FC = () => {
       )
       .then(
         (response) => {
-          setName("");
+          console.log(response)
+            setName("");
           setEmail("");
           setMessage("");
         },
