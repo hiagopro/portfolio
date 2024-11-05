@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  function sendEmail(e: any) {
+  function sendEmail(e: React.ChangeEvent<HTMLInputElement>) {
     e.preventDefault();
     if (name === "" || email === "" || message === "") {
       alert("Preencha todos os campos");
