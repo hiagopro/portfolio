@@ -3,7 +3,7 @@ import Image from "next/image";
 import { NotepadText } from "lucide-react";
 const About: React.FC = () => {
   return (
-    <div className="bg-surface-background lg:pb-6" id="About">
+    <div className="bg-surface-background  md:py-4" id="About">
       <div className="bg-surface-terciari flex flex-col pb-8 md:flex-row  md:rounded-lg md:w-11/12 md:m-auto md:pb-0 md:py-4">
         <div className="flex flex-col justify-center  md:w-1/2 lg:px-12 lg:pb-4">
           <Image
@@ -35,11 +35,11 @@ const About: React.FC = () => {
             </h2>
           </div>
           <div className="flex flex-col gap-4">
-            <h1 className="pl-8 text-3xl text-primary-text font-Heebo font-bold md:text-2xl">
+            <h1 className="pl-8 text-xl text-primary-text font-Heebo font-bold md:text-2xl">
               Eu sou um apaixonado pelo desenvolvimento web a procura de minha
               primeira experiencia profissional
             </h1>
-            <p className="pl-8 text-xl text-secondary-text font-Heebo md:text-sm">
+            <p className="pl-8 text-sm text-secondary-text font-Heebo md:text-sm">
               alem de codar, sou um amante de esportes, gosto de treinar, jogar
               futebol e futvolei. gosto de sair com a familia e momentos ao ar
               livre.
@@ -48,7 +48,7 @@ const About: React.FC = () => {
           <div className="pl-8">
             {" "}
             <button
-              className="flex gap-1 py-4 px-6 text-nowrap text-sm
+              className="flex gap-1 py-4 px-6 text-nowrap text-sm justify-center items-center
       font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 md:px-6 md:py-4 "
             >
               <NotepadText /> Meu resumo{" "}

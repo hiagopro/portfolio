@@ -22,21 +22,21 @@ const Contact: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col ">
               <p className=" font-kalam text-secondary-color text-xl">
                 Contact
               </p>
-              <h1 className="font-Heebo text-primary-text text-2xl">
+              <h1 className="font-Heebo text-primary-text text-2xl py-3">
                 Se interessou no meu trabalho? Vamos trabalhar juntos!
               </h1>
               <div className="flex flex-col">
-                <p className="font-Heebo text-secondary-text text-xl flex flex-col">
+                <p className="font-Heebo text-secondary-text text-sm flex flex-col">
                   Sempre estou livre pra conversar. Me envie um email
                 </p>
-                <p className="text-secondary-color underline decoration-solid decoration-secondary-color text-xl font-Heebo">
+                <p className="text-secondary-color underline decoration-solid decoration-secondary-color text-sm font-Heebo">
                   <a href="">hiagogentilbusiness@gmail.com</a>
                 </p>
-                <p className="font-Heebo text-secondary-text text-xl flex flex-col">
+                <p className="font-Heebo text-secondary-text text-sm flex flex-col">
                   ou me mande uma mensagem nas redes sociais.
                 </p>
               </div>
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                     rel="noopener noreferrer"
                     className="flex"
                   >
-                    <i className="devicon-github-original text-4xl px-2 py-2 text-secondary-text"></i>
+                    <i className="devicon-github-original text-3xl px-2 py-2 text-secondary-text"></i>
                   </a>
                 </div>
                 <div className=" bg-surface-secondary rounded-lg flex">
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                     target="_blank"
                     className="flex"
                   >
-                    <i className="devicon-linkedin-plain text-4xl px-2 py-2 text-secondary-text"></i>
+                    <i className="devicon-linkedin-plain text-3xl px-2 py-2 text-secondary-text"></i>
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
             <div className="flex py-2 md:py-0">
               <button
                 className="flex gap-1 py-5 px-4 text-nowrap  justify-center items-center
-      font-Heebo text-primary-text rounded-lg bg-primary-color-400 text-xl md:py-3 md:text-sm"
+      font-Heebo text-primary-text rounded-lg bg-primary-color-400  md:py-3 text-sm"
               >
                 Enviar Mensagem <ArrowRight size={28} />
               </button>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ChevronsRight, NotepadText } from "lucide-react";
-
+import Link from "next/link";
 const Hero: React.FC = () => {
   return (
     <div className=" py-6 relative  bg-surface-background md:flex md:flex-row md:px-10 md:justify-between lg:justify-center lg:gap-32 lg:py-40" id="Home">
@@ -29,8 +29,11 @@ const Hero: React.FC = () => {
             <NotepadText /> Meu resumo{" "}
           </button>
           <button className="flex py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 lg:py-4 lg:px-6">
-            Get in touch
-            <ChevronsRight />
+           <Link href="#About" className="flex">
+           Avancar 
+           <ChevronsRight />
+           </Link>
+           
           </button>
         </div>
       </div>
