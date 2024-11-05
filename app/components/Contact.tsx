@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  function sendEmail(e: React.ChangeEvent<HTMLInputElement>) {
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (name === "" || email === "" || message === "") {
       alert("Preencha todos os campos");
@@ -99,7 +99,6 @@ const Contact: React.FC = () => {
           </div>
           <div className="flex flex-col  md:w-1/3 md:mt-8">
             <form
-              action=""
               className="flex flex-col gap-5 py-10 w-full"
               onSubmit={sendEmail}
             >
