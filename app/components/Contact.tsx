@@ -1,8 +1,41 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-
+import emailjs from "@emailjs/browser";
 const Contact: React.FC = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  function sendEmail(e: any) {
+    e.preventDefault();
+    if (name === "" || email === "" || message === "") {
+      alert("Preencha todos os campos");
+      return;
+    }
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+    emailjs
+      .send(
+        "service_wf2nbfc",
+        "template_j2dq18c",
+        templateParams,
+        "MoI40Jgq7x6iaXpRd"
+      )
+      .then(
+        (response) => {
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+  }
   return (
     <div className=" bg-surface-background flex justify-center">
       <div
@@ -63,30 +96,41 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 py-10 md:w-1/3 md:mt-8">
-            <input
-              type="text"
-              className="bg-surface-background rounded-lg h-16 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color md:w-full"
-              placeholder="Nome"
-            />
-            <input
-              type="text"
-              className="bg-surface-background rounded-lg h-16 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color"
-              placeholder="E-mail"
-            />
-            <input
-              type="text"
-              className="bg-surface-background rounded-lg pb-32 pt-4 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color"
-              placeholder="Menssagem"
-            />
-            <div className="flex py-2 md:py-0">
-              <button
-                className="flex gap-1 py-5 px-4 text-nowrap  justify-center items-center
+          <div className="flex flex-col  md:w-1/3 md:mt-8">
+            <form
+              action=""
+              className="flex flex-col gap-5 py-10 w-full"
+              onSubmit={sendEmail}
+            >
+              <input
+                type="text"
+                className="bg-surface-background rounded-lg h-16 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color md:w-full"
+                placeholder="Nome"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+              <input
+                type="text"
+                className="bg-surface-background rounded-lg h-16 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color"
+                placeholder="E-mail"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+              <textarea
+                className="bg-surface-background rounded-lg pb-32 pt-4 pl-5 text-xl font-Heebo text-secondary-text focus:outline-secondary-color"
+                placeholder="Menssagem"
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+              />
+              <div className="flex py-2 md:py-0">
+                <button
+                  className="flex gap-1 py-5 px-4 text-nowrap  justify-center items-center
       font-Heebo text-primary-text rounded-lg bg-primary-color-400  md:py-3 text-sm"
-              >
-                Enviar Mensagem <ArrowRight size={28} />
-              </button>
-            </div>
+                >
+                  Enviar Mensagem <ArrowRight size={28} />
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

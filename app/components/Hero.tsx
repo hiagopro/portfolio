@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
         <Image src="/computer.svg" width="300" height="300" alt="" />
       </div>
       <div className="md:order-1 md:w-1/2 lg:">
-        <div className=" px-12 py-6 bg-gradient-to-r from-primary-color-500 via-primary-color-400 to-secondary-color inline-block bg-clip-text  ">
-          <h1 className="    bg-gradient-to-r from-primary-color-500 via-primary-color-400 to-secondary-color bg-clip-text text-transparent text-3xl font-kalam lg:text-5xl">
+        <div className=" px-12 py-6   ">
+          <h1 className=" text-primary-text text-3xl font-kalam lg:text-5xl ">
             OI, Me Chamo Hiago
           </h1>
         </div>
