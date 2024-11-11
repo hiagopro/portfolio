@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       font-Heebo text-primary-text rounded-lg bg-surface-secondary hover:bg-primary-color-400  md:w-32 md:gap-3 md:text-sm md:py-2"
       >
        
-        <Link href={"https://expenses-list-857fde8285be.herokuapp.com/"} target="_blank" className="flex gap-1 items-center ">
+        <Link href={"https://github.com/hiagopro/expenses-list"} target="_blank" className="flex gap-1 items-center ">
         Ver sobre
         <ArrowRight size={32} />
         </Link>

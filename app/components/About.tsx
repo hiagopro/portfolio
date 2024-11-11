@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { NotepadText } from "lucide-react";
+import Link from "next/link";
 const About: React.FC = () => {
   return (
     <div className="bg-surface-background  md:py-4" id="About">
@@ -31,7 +32,7 @@ const About: React.FC = () => {
           </div>
           <div>
             <h2 className="font-kalam text-2xl text-secondary-color pl-8 md:text-xl">
-              About me
+              Sobre mim
             </h2>
           </div>
           <div className="flex flex-col gap-4">
@@ -40,18 +41,17 @@ const About: React.FC = () => {
               primeira experiencia profissional
             </h1>
             <p className="pl-8 text-sm text-secondary-text font-Heebo md:text-sm">
-              alem de codar, sou um amante de esportes, gosto de treinar, jogar
-              futebol e futvolei. gosto de sair com a familia e momentos ao ar
-              livre.
+              Sou uma pessoa super dedicada aos estudos, e amo estudar programação
             </p>
           </div>
           <div className="pl-8">
             {" "}
             <button
-              className="flex gap-1 py-4 px-6 text-nowrap text-sm justify-center items-center
+              className="flex  py-4 px-6 text-nowrap text-sm justify-center items-center
       font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 md:px-6 md:py-4 "
             >
-              <NotepadText /> Meu resumo{" "}
+              <Link href="/curriculo_hiago_gentil2024.pdf" className="flex items-center gap-1 " target="_blank"><NotepadText /> Meu resumo{" "}</Link>
+              
             </button>
           </div>
         </div>

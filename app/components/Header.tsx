@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             href="#Home"
             className="text-primary-text font-Heebo font-light hover:font-normal "
           >
-            Home
+            início
           </Link>{" "}
           <Link
             href="#About"
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
             href="#Contact"
             className="text-primary-text font-Heebo font-light hover:font-normal"
           >
-            Contact
+            Contato
           </Link>{" "}
         </div>
       </nav>

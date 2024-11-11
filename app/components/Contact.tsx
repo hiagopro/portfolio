@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="flex flex-col ">
               <p className=" font-kalam text-secondary-color text-xl">
-                Contact
+                Contato
               </p>
               <h1 className="font-Heebo text-primary-text text-2xl py-3">
                 Se interessou no meu trabalho? Vamos trabalhar juntos!

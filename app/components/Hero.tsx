@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="px-12 flex flex-col gap-4">
           <h1 className="text-2xl font-Heebo text-primary-text">
-            Full-stack develooper & Entusiasta de inovação
+            Programador Full-stack & Entusiasta de inovação
           </h1>
           <p className="text-sm font-Heebo text-secondary-text">
             Minha Caminhada no Desenvolvimento Web começou em março de 2023. Eu
@@ -26,11 +26,11 @@ const Hero: React.FC = () => {
         </div>
         <div className="px-12 flex gap-5 py-6 ">
           <button className="flex gap-1 py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-surface-secondary hover:bg-surface-terciari lg:px-6 lg:py-4">
-            <NotepadText /> Meu resumo{" "}
+           <Link href="/curriculo_hiago_gentil2024.pdf" className="flex gap-1" target="_blank"> <NotepadText /> Meu resumo{" "}</Link>
           </button>
           <button className="flex py-3 px-4 text-nowrap font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 lg:py-4 lg:px-6">
            <Link href="#About" className="flex">
-           Avancar 
+           Avançar 
            <ChevronsRight />
            </Link>
            
