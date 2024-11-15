@@ -38,10 +38,11 @@ const About: React.FC = () => {
           <div className="flex flex-col gap-4">
             <h1 className="pl-8 text-xl text-primary-text font-Heebo font-bold md:text-2xl">
               Eu sou um apaixonado pelo desenvolvimento web a procura de minha
-              primeira experiencia profissional
+              primeira experiência profissional
             </h1>
             <p className="pl-8 text-sm text-secondary-text font-Heebo md:text-sm">
-              Sou uma pessoa super dedicada aos estudos, e amo estudar programação
+              Sou uma pessoa super dedicada aos estudos, e amo estudar
+              programação
             </p>
           </div>
           <div className="pl-8">
@@ -50,8 +51,13 @@ const About: React.FC = () => {
               className="flex  py-4 px-6 text-nowrap text-sm justify-center items-center
       font-Heebo text-primary-text rounded-lg bg-primary-color-500 hover:bg-primary-color-400 md:px-6 md:py-4 "
             >
-              <Link href="/curriculo_hiago_gentil2024.pdf" className="flex items-center gap-1 " target="_blank"><NotepadText /> Meu resumo{" "}</Link>
-              
+              <Link
+                href="/curriculo_hiago_gentil2024.pdf"
+                className="flex items-center gap-1 "
+                target="_blank"
+              >
+                <NotepadText /> Meu resumo{" "}
+              </Link>
             </button>
           </div>
         </div>
