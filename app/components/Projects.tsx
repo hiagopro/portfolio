@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
                 Lista de Despesas
               </h1>
               <p className="text-primary-text text-xl font-Heebo">
-                Com esse projeto voce pode gerenciar suas despesas mensais de
+                Com esse projeto você pode gerenciar suas despesas mensais de
                 forma facilitada.
               </p>
             </div>

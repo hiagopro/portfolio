@@ -37,7 +37,7 @@ const About: React.FC = () => {
           </div>
           <div className="flex flex-col gap-4">
             <h1 className="pl-8 text-xl text-primary-text font-Heebo font-bold md:text-2xl">
-              Eu sou um apaixonado pelo desenvolvimento web a procura de minha
+              Eu sou um apaixonado pelo desenvolvimento web à procura de minha
               primeira experiência profissional
             </h1>
             <p className="pl-8 text-sm text-secondary-text font-Heebo md:text-sm">
